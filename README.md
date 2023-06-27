@@ -1,6 +1,7 @@
+<pre>
 To run: 
 
-1. Comands
+1. Comands </br>
 npm update
 npm run dev
 
@@ -16,3 +17,5 @@ and update:
 DB_DATABASE=careermap_db
 
 run: php artisan migrate
+
+</pre>pre>
