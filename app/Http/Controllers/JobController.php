@@ -48,10 +48,10 @@ class JobController extends Controller
             // Return a response with the created job
             return response()->json(['success' => true, 'job' => $job], 200);
         } catch (ValidationException $e) {
-            //TODO
+            //TODO in future
             //error message return
             // Validation failed, return the validation error messages
-            // return response()->json(['success' => false, 'errors' => $e->validator->errors()]);
+            // return response()->json(['success' => false, 'errors' => errors()]);
         }
 
     }
@@ -65,8 +65,6 @@ class JobController extends Controller
         $job = Job::find($jobId);
 
         // Return not found response if failed
-        //TODO 
-        //error handling message
         if (!$job) {
             return response()->json(['message' => 'Job not found'], 404);
         }

@@ -6,14 +6,14 @@
             <h1 class="text-2xl font-bold mb-4">Create New Job</h1>
 
             <!-- if sucess -->
-             <div id="success-message" class="hidden bg-green-200 text-green-800 py-2 px-4 mb-4 rounded">
+            <div id="success-message" class="hidden bg-green-200 text-green-800 py-2 px-4 mb-4 rounded">
                 Job created!
             </div> 
 
             <form id="create-job-form" class="max-w-md mx-auto">
 
             <!-- if error occured, loup over errors and display -->
-                            <div id="error-messages" class="hidden bg-red-200 text-red-800 py-2 px-4 mb-4 rounded"></div>
+                <div id="error-messages" class="hidden bg-red-200 text-red-800 py-2 px-4 mb-4 rounded"></div>
                 <div class="mb-4">
                     <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
                     <input type="text" id="title" name="title" class="border border-gray-300 rounded px-3 py-2 w-full" required>
@@ -73,7 +73,7 @@
                 button.disabled = false;
                 })
                 .catch(error => {
-                displayErrorMessages(['error. Please try again.']);
+                displayErrorMessages(['Something went wrong. Please check your answers.']);
                 button.disabled = false; });
         });
 
