@@ -73,7 +73,7 @@
                 button.disabled = false;
                 })
                 .catch(error => {
-                displayErrorMessages(['error. Please try again.']);
+                displayErrorMessages(['Something went wrong. Please check your answers.']);
                 button.disabled = false; });
         });
 
