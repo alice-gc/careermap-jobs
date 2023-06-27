@@ -18,4 +18,4 @@ DB_DATABASE=careermap_db
 
 run: php artisan migrate
 
-</pre>pre>
+</pre>
